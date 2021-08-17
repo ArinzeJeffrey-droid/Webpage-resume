@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --theme-color: #ffffff;
+    --theme-blue: #233484;
+    --landing-bg: #030303;
+    --light-dark-color: #121212;
+    --dark-color: #080808;
+    --light-grey: #848484;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: var(--landing-bg);
+}
+
+
+.mini-landing {
+    height: 200px;
+}
+
+
+.about-me {
+    width: 70%;
+    background-color: var(--light-dark-color);
+}
+.about-me h1 {
+    color: var(--theme-color);
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    line-height: 1;
+}
+
+.about-me .tag {
+    color: var(--theme-color);
+    background-color: var(--theme-blue);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.about-me p {
+    /* text-align: justify; */
+    color: var(--light-grey);
+}
+
+.info-snippet p:nth-child(1) {
+    color: var(--theme-blue) !important;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.info-snippet p:nth-child(2), .info-snippet a {
+    color: var(--light-grey) !important;
+    text-decoration: none;
+}
+.info-snippet a {
+    margin-bottom: 1rem !important;
+}
+
+.footer {
+    color: var(--light-grey);
+}
+.footer h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--theme-color);
+}
+
+
+.portfolio-wrapper {
+    /* border: 1px solid #fff; */
+    /* width: 80%; */
+    height: 300px;
+}
+
+.portfolio-wrapper h1, .portfolio-wrapper h4 {
+    color: var(--theme-color);
+    font-weight: 600 !important;
+    text-transform: uppercase;
+}
+
+.portfolio-wrapper h4 {
+    color: var(--theme-blue) !important;
+}
+
+.portfolio-container {
+    justify-content: space-between;
+}
+.portfolio-item {
+    flex: 1;
+    border-left: 5px solid var(--light-grey) !important;
+}
+.portfolio-item li {
+    font-weight: 600;
+    color: var(--light-grey);
+}
+.year {
+    font-weight: 600;
+    color: #fff !important;
+    margin-bottom: 0 !important;
+}
+
+.study {
+    font-weight: 600;
+    color: var(--light-grey);
+}
+.no-border {
+    border: none !important;
+}
+
+.skill {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.skill svg {
+    height: 100%;
+    width: 100%;
+}
